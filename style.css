@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Ibarra+Real+Nova:ital@1&family=Mouse+Memoirs&display=swap');
+
+.designBody {
+    /* font-family: 'BhuTuka Expanded One', cursive;  */
+    font-family: 'Ibarra Real Nova', serif;
+    font-family: 'Mouse Memoirs', sans-serif;
+    line-height: 1.5;
+    background-color: rgb(248, 247, 247);
+    
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+.pictureStyle {
+    width: 200px;
+    border-radius: 30%;
+}
+
+
+.divStyle {
+    display: flex;
+    background-color: antiquewhite;
+    width: 200px;
+    padding: 30px px;
+
+
+    
+    justify-content : flex-start;
+   
+    height : 250px;
+   
+
+   margin : 80px 100px;
+   margin-top : 50px;
+   gap : 10px;
+   
+   min-height : 100px;
+   border : 5px;
+   flex-wrap : wrap; 
+   flex-direction : row;
+   background-color : rgb(200, 228, 219);
+   text-align :right;
+   border-radius : 10px;
+   background-size : 100%;
+}
