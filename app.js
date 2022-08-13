@@ -72,9 +72,9 @@ Car.prototype.render = function() {
     const imgEl = document.createElement('img');
 
 
-    h2El.textContent = `Name : ${this.name}`;
-    pEl.textContent = `Price : ${this.price} JD`;  
-    pEl2.textContent = `Speed : ${this.speed}`;
+    h2El.textContent = ` Name : ${this.name} `;
+    pEl.textContent = ` Price : ${this.price} JD `;  
+    pEl2.textContent = ` Speed : ${this.speed} `;
     imgEl.src = `${this.img}`;
     imgEl.alt = `${this.name}`;
 
