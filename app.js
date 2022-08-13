@@ -1,3 +1,8 @@
+
+    
+    
+
+
 'use strict';
 
 const carArray = [];
@@ -63,11 +68,13 @@ Car.prototype.render = function() {
 
     const h2El = document.createElement('h2');
     const pEl = document.createElement('p');
+    const pEl2 = document.createElement('p');
     const imgEl = document.createElement('img');
 
 
     h2El.textContent = `Name : ${this.name}`;
-    pEl.textContent = `Price : ${this.price} JD -Speed : ${this.speed}`;
+    pEl.textContent = `Price : ${this.price} JD`;  
+    pEl2.textContent = `Speed : ${this.speed}`;
     imgEl.src = `${this.img}`;
     imgEl.alt = `${this.name}`;
 
@@ -75,6 +82,7 @@ Car.prototype.render = function() {
 
     divEl.appendChild(h2El);
     divEl.appendChild(pEl);
+    divEl.appendChild(pEl2);
     divEl.appendChild(imgEl);
 
 
@@ -101,8 +109,10 @@ function handlesubmit(event) {
 
     let carName = event.target.name.value;
     let carPrice = event.target.price.value;
+    let carSpeed = event.target.speed.value;
+    let carImg = event.target.image.value;
 
-    let newCar = new Car(carName, carPrice, 0, 0);
+    let newCar = new Car(carName, carPrice, carSpeed, carImg);
     
     
 
@@ -134,34 +144,18 @@ function getData() {
     if(arrayData !== null) {
 
         for (let index = x; index < arrayData.length; index++) {
-            new Car(arrayData[index].name, arrayData[index].price, arrayData[index].speed, arrayData[index].img);
-            //arr[index].render()
+            new Car(arrayData[index].name, arrayData[index].price, arrayData[index].speed, arrayData[index].image);
             
         }
         x++;
-            
-    
     }
 
 
-    // for (let i = 0; i < carArray.length; i++) {
-    //     for (let j = 1; j < carArray.length; j++) {
-    //         if(carArray[i].name == carArray[j].name) {
-    //             carArray.splice(i, 1);
-    //         }
-            
-    //     }
-        
-    // }
   
 
     for (let i= 0; i < carArray.length; i++) {
         carArray[i].render();
     }
 
-
-    
 }
 getData();
-
-
