@@ -29,7 +29,7 @@ bodyEl[0].appendChild(h1El);
 console.log("-------1----------------");
 
 const formEl = document.getElementById('form');
-bodyEl[0].appendChild(formEl);
+//bodyEl[0].appendChild(formEl);
 
 
 
@@ -45,26 +45,11 @@ console.log("--------2----------");
 
 
 
+if(formEl != null) {
+    formEl.addEventListener('submit', handlesubmit);
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-formEl.addEventListener('submit', handlesubmit);
 
 
 
